@@ -1,8 +1,3 @@
-hi
-hiii
-hiiiiiiiiii
-hiiiiiiiiiii
-helloo
 helllllllo
 hiiiiiiiiii
 hiiiiiiiiiii
@@ -19,4 +14,3 @@ helllllllo
 hiiiiiiiiii
 hiiiiiiiiiii
 helloo
-helllllllo
