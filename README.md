@@ -1,3 +1,6 @@
+## test react for homebrew
+이 프로젝트는 homebrew 대회의 테스트 및 진행을 위한 프로젝트입니다.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
