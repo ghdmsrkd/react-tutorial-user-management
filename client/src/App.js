@@ -38,15 +38,16 @@ class App extends Component {
     this.stateRefresh = this.stateRefresh.bind(this);
   }
 
-    stateRefresh() {
+  stateRefresh() {
     this.setState({
       customers: '',
-      completed: 0
-    });
-    this.callApi()
-      .then(res => this.setState({customers: res}))
-      .catch(err => console.log(err));
-    }
+       completed: 0
+  });
+  
+  this.callApi()
+    .then(res => this.setState({customers: res}))
+    .catch(err => console.log(err));
+  }
 
 componentDidMount(){
   this.timer = setInterval(this.progress, 20);
@@ -81,11 +82,12 @@ progress =() =>{
                   <TableCell>생년원일</TableCell>
                   <TableCell>성별</TableCell>
                   <TableCell>직업</TableCell>
+                  <TableCell>설정</TableCell>
               </TableRow>
             </TableHead>
           <TableBody>
             {this.state.customers ? 
-            this.state.customers.map(c =>{return (<Customer key={c.id} id={c.id} image={c.image} name={c.NAME} birthday={c.birthday} gender={c.gender} job={c.job} />) 
+              this.state.customers.map(c =>{return (<Customer key={c.id} id={c.id} image={c.image} name={c.NAME} birthday={c.birthday} gender={c.gender} job={c.job} />) 
             }) : 
             <TableRow>
               <TableCell colSpan="6" align="center">
